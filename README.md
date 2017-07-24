@@ -1,4 +1,4 @@
 # Doc
 
-[View SDK Doc]()
-[Device SDK Doc]()
+[View SDK Doc](https://neolabaram.github.io/Doc/ViewSDK)
+[Device SDK Doc](https://neolabaram.github.io/Doc/PlayerSDK)
