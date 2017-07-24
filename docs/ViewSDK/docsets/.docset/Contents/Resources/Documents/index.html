@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (20% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/DrawableView.html">DrawableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NProjParser.html">NProjParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SVGParser.html">SVGParser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/s:C7NeoView6Stroke">Stroke</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SymbolMetaInfo.html">SymbolMetaInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/ZoomFitType.html">ZoomFitType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DrawablePageProtocol.html">DrawablePageProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/OverlayImageClickProtocol.html">OverlayImageClickProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/onViewSizeChangeProtocol.html">onViewSizeChangeProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/NoteMetaInfo.html">NoteMetaInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PageMetaInfo.html">PageMetaInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:V7NeoView8PathMeta">PathMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SVGMeta.html">SVGMeta</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='ios-view-sdk' class='heading'>iOS View SDK</h1>
+<h2 id='library-tool-carthage' class='heading'>Library 관리 tool: Carthage</h2>
+
+<ul>
+<li><a href="https://github.com/Carthage/Carthage">Carthage link</a>: Installing Carthage 의 방법(3가지) 중 택1하여 Carthage 설치</li>
+<li><a href="http://krazie99.github.io/2016/02/22/Carthage.html">설치방법 링크 - 한글</a></li>
+</ul>
+<h3 id='carfile' class='heading'>carfile</h3>
+<h3 id='terminal-carfile' class='heading'>terminal 에서 carfile을 생성합니다.</h3>
+
+<p>$ cd <Path_to_the_project_folder>
+$ touch Cartfile
+$ open Cartfile -a Xcode</p>
+<h3 id='carfile' class='heading'>carfile의 형태는 아래와 같습니다.</h3>
+
+<p>github <q>realm/realm-cocoa</q>
+github <q>drmohundro/SWXMLHash</q> ~&gt; 4.0</p>
+<h3 id='cartfile-carthage-update' class='heading'>cartfile 위치에서 carthage update 실행</h3>
+
+<p>$ cartfile update</p>
+
+<blockquote>
+<p>소스코드를 내려받았다면, update success와 함께 라이브러리가 추가되어있습니다.</p>
+</blockquote>
+<h3 id='framework' class='heading'>framework에 아래 세가지 라이브러리 추가</h3>
+<h2 id='data-base-realm' class='heading'>Data Base: Realm</h2>
+
+<p><a href="https://github.com/realm/realm-cocoa">Realm Source GitHub</a></p>
+
+<p><a href="https://realm.io/docs/swift/latest/">Realm Database Doc</a></p>
+<h2 id='xml-parser-swxmlhash' class='heading'>XML Parser: SWXMLHASH</h2>
+
+<p><a href="https://github.com/drmohundro/SWXMLHash">Source GitHub</a></p>
+<h3 id='nested-framework-not-support-issue' class='heading'>Nested Framework Not Support Issue</h3>
+
+<p>따라서 사용하는 App에서 상기 Framework를 추가 해주어야함
+(Embedded Binaries에도 추가)</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-07-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
