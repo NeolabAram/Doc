@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (20% documented)</p>
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -36,13 +36,13 @@
                 <a href="Classes/NProjParser.html">NProjParser</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/ReplayView.html">ReplayView</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/SVGParser.html">SVGParser</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes.html#/s:C7NeoView6Stroke">Stroke</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SymbolMetaInfo.html">SymbolMetaInfo</a>
+                <a href="Classes/Stroke.html">Stroke</a>
               </li>
             </ul>
           </li>
@@ -50,7 +50,7 @@
             <a href="Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/ZoomFitType.html">ZoomFitType</a>
+                <a href="Enums/PlaySpeed.html">PlaySpeed</a>
               </li>
             </ul>
           </li>
@@ -58,13 +58,10 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/DrawablePageProtocol.html">DrawablePageProtocol</a>
+                <a href="Protocols/PlayTimeProtocol.html">PlayTimeProtocol</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/OverlayImageClickProtocol.html">OverlayImageClickProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/onViewSizeChangeProtocol.html">onViewSizeChangeProtocol</a>
+                <a href="Protocols/SymbolProtocol.html">SymbolProtocol</a>
               </li>
             </ul>
           </li>
@@ -72,16 +69,19 @@
             <a href="Structs.html">Structs</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/NoteMetaInfo.html">NoteMetaInfo</a>
+                <a href="Structs/NoteData.html">NoteData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/PageMetaInfo.html">PageMetaInfo</a>
+                <a href="Structs/PageData.html">PageData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:V7NeoView8PathMeta">PathMeta</a>
+                <a href="Structs/SVGData.html">SVGData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/SVGMeta.html">SVGMeta</a>
+                <a href="Structs.html#/s:V7NeoView11StrokeGroup">StrokeGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SymbolData.html">SymbolData</a>
               </li>
             </ul>
           </li>
@@ -110,9 +110,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>배경 이미지와 펜 Stroke, 정답 화면을 포함하는 View</p>
 
                         <a href="Classes/DrawableView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DrawableView</span><span class="p">:</span> <span class="kt">UIScrollView</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -134,34 +142,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>nproj 파일 파서(parser).</p>
 
                         <a href="Classes/NProjParser.html" class="slightly-smaller">See more</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:C7NeoView14SymbolMetaInfo"></a>
-                    <a name="//apple_ref/swift/Class/SymbolMetaInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:C7NeoView14SymbolMetaInfo">SymbolMetaInfo</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                        <a href="Classes/SymbolMetaInfo.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SymbolMetaInfo</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">NProjParser</span></code></pre>
 
                         </div>
                       </div>
@@ -185,8 +174,49 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Stroke class</p>
 
+                        <a href="Classes/Stroke.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Stroke</span><span class="p">:</span> <span class="kt">UIBezierPath</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C7NeoView10ReplayView"></a>
+                    <a name="//apple_ref/swift/Class/ReplayView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C7NeoView10ReplayView">ReplayView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>시간 흐름에 따른 필기 데이터를 보여주는 뷰</p>
+
+                        <a href="Classes/ReplayView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReplayView</span><span class="p">:</span> <span class="kt">UIScrollView</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -208,9 +238,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>svg 파일 파서</p>
 
                         <a href="Classes/SVGParser.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SVGParser</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -220,7 +258,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-07-17)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-08-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

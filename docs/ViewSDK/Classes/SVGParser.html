@@ -14,7 +14,7 @@
     <a title="SVGParser Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (20% documented)</p>
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -37,13 +37,13 @@
                 <a href="../Classes/NProjParser.html">NProjParser</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ReplayView.html">ReplayView</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/SVGParser.html">SVGParser</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/s:C7NeoView6Stroke">Stroke</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SymbolMetaInfo.html">SymbolMetaInfo</a>
+                <a href="../Classes/Stroke.html">Stroke</a>
               </li>
             </ul>
           </li>
@@ -51,7 +51,7 @@
             <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/ZoomFitType.html">ZoomFitType</a>
+                <a href="../Enums/PlaySpeed.html">PlaySpeed</a>
               </li>
             </ul>
           </li>
@@ -59,13 +59,10 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/DrawablePageProtocol.html">DrawablePageProtocol</a>
+                <a href="../Protocols/PlayTimeProtocol.html">PlayTimeProtocol</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/OverlayImageClickProtocol.html">OverlayImageClickProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/onViewSizeChangeProtocol.html">onViewSizeChangeProtocol</a>
+                <a href="../Protocols/SymbolProtocol.html">SymbolProtocol</a>
               </li>
             </ul>
           </li>
@@ -73,16 +70,19 @@
             <a href="../Structs.html">Structs</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/NoteMetaInfo.html">NoteMetaInfo</a>
+                <a href="../Structs/NoteData.html">NoteData</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/PageMetaInfo.html">PageMetaInfo</a>
+                <a href="../Structs/PageData.html">PageData</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:V7NeoView8PathMeta">PathMeta</a>
+                <a href="../Structs/SVGData.html">SVGData</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SVGMeta.html">SVGMeta</a>
+                <a href="../Structs.html#/s:V7NeoView11StrokeGroup">StrokeGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SymbolData.html">SymbolData</a>
               </li>
             </ul>
           </li>
@@ -92,7 +92,13 @@
         <section>
           <section class="section">
             <h1>SVGParser</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SVGParser</span></code></pre>
+
+                </div>
+              </div>
+            <p>svg 파일 파서</p>
 
           </section>
           <section class="section task-group-section">
@@ -111,8 +117,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Singleton</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span> <span class="o">=</span> <span class="kt">SVGParser</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -120,9 +134,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC7NeoView9SVGParser6pasingFTSS5scaleVSC6CGSize_GSaCS_6Stroke_"></a>
-                    <a name="//apple_ref/swift/Method/pasing(_:scale:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7NeoView9SVGParser6pasingFTSS5scaleVSC6CGSize_GSaCS_6Stroke_">pasing(_:scale:)</a>
+                    <a name="/s:FC7NeoView9SVGParser6pasingFSSGSaVS_11StrokeGroup_"></a>
+                    <a name="//apple_ref/swift/Method/pasing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView9SVGParser6pasingFSSGSaVS_11StrokeGroup_">pasing(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -130,16 +144,36 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>이혜림</p>
+                        <p>Returns [StrokeGroup] 그룹으로 묶인 스트로크 Data
+svg 파일을 parsing 합니다.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pasing</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">scale</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes.html#/s:C7NeoView6Stroke">Stroke</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pasing</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs.html#/s:V7NeoView11StrokeGroup">StrokeGroup</a></span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String Type의 svg 파일.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -149,7 +183,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-07-17)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-08-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

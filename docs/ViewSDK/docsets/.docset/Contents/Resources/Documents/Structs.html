@@ -13,7 +13,7 @@
     <a title="Structs  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (20% documented)</p>
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -36,13 +36,13 @@
                 <a href="Classes/NProjParser.html">NProjParser</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/ReplayView.html">ReplayView</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/SVGParser.html">SVGParser</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes.html#/s:C7NeoView6Stroke">Stroke</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SymbolMetaInfo.html">SymbolMetaInfo</a>
+                <a href="Classes/Stroke.html">Stroke</a>
               </li>
             </ul>
           </li>
@@ -50,7 +50,7 @@
             <a href="Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/ZoomFitType.html">ZoomFitType</a>
+                <a href="Enums/PlaySpeed.html">PlaySpeed</a>
               </li>
             </ul>
           </li>
@@ -58,13 +58,10 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/DrawablePageProtocol.html">DrawablePageProtocol</a>
+                <a href="Protocols/PlayTimeProtocol.html">PlayTimeProtocol</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/OverlayImageClickProtocol.html">OverlayImageClickProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/onViewSizeChangeProtocol.html">onViewSizeChangeProtocol</a>
+                <a href="Protocols/SymbolProtocol.html">SymbolProtocol</a>
               </li>
             </ul>
           </li>
@@ -72,16 +69,19 @@
             <a href="Structs.html">Structs</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/NoteMetaInfo.html">NoteMetaInfo</a>
+                <a href="Structs/NoteData.html">NoteData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/PageMetaInfo.html">PageMetaInfo</a>
+                <a href="Structs/PageData.html">PageData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:V7NeoView8PathMeta">PathMeta</a>
+                <a href="Structs/SVGData.html">SVGData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/SVGMeta.html">SVGMeta</a>
+                <a href="Structs.html#/s:V7NeoView11StrokeGroup">StrokeGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SymbolData.html">SymbolData</a>
               </li>
             </ul>
           </li>
@@ -100,9 +100,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:V7NeoView12NoteMetaInfo"></a>
-                    <a name="//apple_ref/swift/Struct/NoteMetaInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:V7NeoView12NoteMetaInfo">NoteMetaInfo</a>
+                    <a name="/s:V7NeoView8PageData"></a>
+                    <a name="//apple_ref/swift/Struct/PageData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V7NeoView8PageData">PageData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -110,41 +110,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                        <a href="Structs/NoteMetaInfo.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NoteMetaInfo</span></code></pre>
+                        <p>PageData from xml or Database</p>
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:V7NeoView12PageMetaInfo"></a>
-                    <a name="//apple_ref/swift/Struct/PageMetaInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:V7NeoView12PageMetaInfo">PageMetaInfo</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                        <a href="Structs/PageMetaInfo.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/PageData.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PageMetaInfo</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PageData</span></code></pre>
 
                         </div>
                       </div>
@@ -158,9 +132,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:V7NeoView7SVGMeta"></a>
-                    <a name="//apple_ref/swift/Struct/SVGMeta" class="dashAnchor"></a>
-                    <a class="token" href="#/s:V7NeoView7SVGMeta">SVGMeta</a>
+                    <a name="/s:V7NeoView7SVGData"></a>
+                    <a name="//apple_ref/swift/Struct/SVGData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V7NeoView7SVGData">SVGData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -168,19 +142,31 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SVG Data Structure</p>
 
-                        <a href="Structs/SVGMeta.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/SVGData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SVGData</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:V7NeoView8PathMeta"></a>
-                    <a name="//apple_ref/swift/Struct/PathMeta" class="dashAnchor"></a>
-                    <a class="token" href="#/s:V7NeoView8PathMeta">PathMeta</a>
+                    <a name="/s:V7NeoView8NoteData"></a>
+                    <a name="//apple_ref/swift/Struct/NoteData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V7NeoView8NoteData">NoteData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -188,8 +174,80 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>NoteData from xml or Database</p>
 
+                        <a href="Structs/NoteData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NoteData</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V7NeoView10SymbolData"></a>
+                    <a name="//apple_ref/swift/Struct/SymbolData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V7NeoView10SymbolData">SymbolData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Symbol data form xml or Database</p>
+
+                        <a href="Structs/SymbolData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SymbolData</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V7NeoView11StrokeGroup"></a>
+                    <a name="//apple_ref/swift/Struct/StrokeGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V7NeoView11StrokeGroup">StrokeGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>StrokeGroup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StrokeGroup</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -199,7 +257,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-07-17)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-08-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

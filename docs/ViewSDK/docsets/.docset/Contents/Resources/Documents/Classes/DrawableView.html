@@ -14,7 +14,7 @@
     <a title="DrawableView Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (20% documented)</p>
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -37,13 +37,13 @@
                 <a href="../Classes/NProjParser.html">NProjParser</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ReplayView.html">ReplayView</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/SVGParser.html">SVGParser</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/s:C7NeoView6Stroke">Stroke</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SymbolMetaInfo.html">SymbolMetaInfo</a>
+                <a href="../Classes/Stroke.html">Stroke</a>
               </li>
             </ul>
           </li>
@@ -51,7 +51,7 @@
             <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/ZoomFitType.html">ZoomFitType</a>
+                <a href="../Enums/PlaySpeed.html">PlaySpeed</a>
               </li>
             </ul>
           </li>
@@ -59,13 +59,10 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/DrawablePageProtocol.html">DrawablePageProtocol</a>
+                <a href="../Protocols/PlayTimeProtocol.html">PlayTimeProtocol</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/OverlayImageClickProtocol.html">OverlayImageClickProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/onViewSizeChangeProtocol.html">onViewSizeChangeProtocol</a>
+                <a href="../Protocols/SymbolProtocol.html">SymbolProtocol</a>
               </li>
             </ul>
           </li>
@@ -73,16 +70,19 @@
             <a href="../Structs.html">Structs</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/NoteMetaInfo.html">NoteMetaInfo</a>
+                <a href="../Structs/NoteData.html">NoteData</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/PageMetaInfo.html">PageMetaInfo</a>
+                <a href="../Structs/PageData.html">PageData</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:V7NeoView8PathMeta">PathMeta</a>
+                <a href="../Structs/SVGData.html">SVGData</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SVGMeta.html">SVGMeta</a>
+                <a href="../Structs.html#/s:V7NeoView11StrokeGroup">StrokeGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SymbolData.html">SymbolData</a>
               </li>
             </ul>
           </li>
@@ -92,10 +92,137 @@
         <section>
           <section class="section">
             <h1>DrawableView</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DrawableView</span><span class="p">:</span> <span class="kt">UIScrollView</span></code></pre>
+
+                </div>
+              </div>
+            <p>배경 이미지와 펜 Stroke, 정답 화면을 포함하는 View</p>
 
           </section>
           <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7NeoView12DrawableView14symbolDelegateXwGSqPS_14SymbolProtocol__"></a>
+                    <a name="//apple_ref/swift/Property/symbolDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7NeoView12DrawableView14symbolDelegateXwGSqPS_14SymbolProtocol__">symbolDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SymbolProtocol</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">symbolDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SymbolProtocol.html">SymbolProtocol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7NeoView12DrawableViewcFT5frameVSC6CGRect_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableViewcFT5frameVSC6CGRect_S0_">init(frame:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7NeoView12DrawableViewcFT5coderCSo7NSCoder_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableViewcFT5coderCSo7NSCoder_GSqS0__">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>NSCoder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Public%20API"></a>
@@ -108,9 +235,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC7NeoView12DrawableViewcFTPS_20DrawablePageProtocol_5frameVSC6CGRect9backImageGSqCSo7UIImage__S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(_:frame:backImage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7NeoView12DrawableViewcFTPS_20DrawablePageProtocol_5frameVSC6CGRect9backImageGSqCSo7UIImage__S0_">init(_:frame:backImage:)</a>
+                    <a name="/s:FC7NeoView12DrawableView18setBackgroundImageFGSqCSo7UIImage_T_"></a>
+                    <a name="//apple_ref/swift/Method/setBackgroundImage(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableView18setBackgroundImageFGSqCSo7UIImage_T_">setBackgroundImage(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -118,8 +245,34 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setBackgroundImage</span><span class="p">(</span><span class="n">_</span> <span class="nv">backImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?)</span></code></pre>
 
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage 배경이미지 설정.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -148,15 +301,46 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backcolor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>배경 color 투명도 설정.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage 정답 이미지 설정.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC7NeoView12DrawableView19addOverlayImageListFGSaCSo11UIImageView_T_"></a>
-                    <a name="//apple_ref/swift/Method/addOverlayImageList(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7NeoView12DrawableView19addOverlayImageListFGSaCSo11UIImageView_T_">addOverlayImageList(_:)</a>
+                    <a name="/s:FC7NeoView12DrawableView16anserLayerHiddenFSbT_"></a>
+                    <a name="//apple_ref/swift/Method/anserLayerHidden(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableView16anserLayerHiddenFSbT_">anserLayerHidden(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -164,14 +348,106 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>채점관련 레이어</p>
+                        <p>정답 보여주는 레이어 숨기거나 보여줌</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addOverlayImageList</span><span class="p">(</span><span class="n">_</span> <span class="nv">imageViews</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIImageView</span><span class="p">])</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">anserLayerHidden</span><span class="p">(</span><span class="n">_</span> <span class="nv">isHidden</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isHidden</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true or false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7NeoView12DrawableView9addStrokeFT11strokeGroupGSaVS_11StrokeGroup__T_"></a>
+                    <a name="//apple_ref/swift/Method/addStroke(strokeGroup:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableView9addStrokeFT11strokeGroupGSaVS_11StrokeGroup__T_">addStroke(strokeGroup:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>필기 데이터 설정( 기존데이터는 제거함)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addStroke</span><span class="p">(</span><span class="n">strokeGroup</span> <span class="nv">list</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs.html#/s:V7NeoView11StrokeGroup">StrokeGroup</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>strokeGroups</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[StrokeGroup]</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7NeoView12DrawableView10viewZoomX2FSbT_"></a>
+                    <a name="//apple_ref/swift/Method/viewZoomX2(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableView10viewZoomX2FSbT_">viewZoomX2(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>2배 확대 및 원복</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">viewZoomX2</span><span class="p">(</span><span class="n">_</span> <span class="nv">isZoom</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -181,9 +457,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC7NeoView12DrawableView9addStrokeFT7strokesGSaCS_6Stroke__T_"></a>
-                    <a name="//apple_ref/swift/Method/addStroke(strokes:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7NeoView12DrawableView9addStrokeFT7strokesGSaCS_6Stroke__T_">addStroke(strokes:)</a>
+                    <a name="/s:FC7NeoView12DrawableView9addSymbolFTVS_8PageDataGSaVS_10SymbolData_CSo7UIImageS3__T_"></a>
+                    <a name="//apple_ref/swift/Method/addSymbol(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableView9addSymbolFTVS_8PageDataGSaVS_10SymbolData_CSo7UIImageS3__T_">addSymbol(_:_:_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -191,16 +467,71 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>필기 보여주는 데이터</p>
+                        <p>Symbol 설정 : removeSymbol()로 제거 하지 않으면 계속 추가됨</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addStroke</span><span class="p">(</span><span class="n">strokes</span> <span class="nv">list</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes.html#/s:C7NeoView6Stroke">Stroke</a></span><span class="p">])</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addSymbol</span><span class="p">(</span><span class="n">_</span> <span class="nv">page</span><span class="p">:</span> <span class="kt"><a href="../Structs/PageData.html">PageData</a></span><span class="p">,</span><span class="n">_</span> <span class="nv">symbolList</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/SymbolData.html">SymbolData</a></span><span class="p">],</span><span class="n">_</span> <span class="nv">nor</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span><span class="n">_</span> <span class="nv">sel</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PageData.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>symbolList</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[SymbolData].</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>기본 Symbol Image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>선택된 Symbol Image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -208,9 +539,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC7NeoView12DrawableView15setUserZoomMoveFSbT_"></a>
-                    <a name="//apple_ref/swift/Method/setUserZoomMove(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7NeoView12DrawableView15setUserZoomMoveFSbT_">setUserZoomMove(_:)</a>
+                    <a name="/s:FC7NeoView12DrawableView12removeSymbolFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/removeSymbol()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7NeoView12DrawableView12removeSymbolFT_T_">removeSymbol()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -218,46 +549,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>화면이 작아서 필요할 가능성이 있음</p>
+                        <p>Remove Symbol</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setUserZoomMove</span><span class="p">(</span><span class="n">_</span> <span class="nv">enable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeSymbol</span><span class="p">()</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/%EC%82%AC%EC%9A%A9%EC%95%88%ED%95%A8"></a>
-                <a name="//apple_ref/swift/Section/사용안함" class="dashAnchor"></a>
-                <a href="#/%EC%82%AC%EC%9A%A9%EC%95%88%ED%95%A8">
-                  <h3 class="section-name">사용안함</h3>
-                </a>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC7NeoView12DrawableViewcFT5coderCSo7NSCoder_GSqS0__"></a>
-                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7NeoView12DrawableViewcFT5coderCSo7NSCoder_GSqS0__">init(coder:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
                       </div>
                     </section>
                   </div>
@@ -267,7 +568,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-07-17)</p>
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-08-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
